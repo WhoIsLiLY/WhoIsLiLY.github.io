@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Ganti dengan nama cabang yang ingin kamu gunakan
+      - main
 
 jobs:
   build:
@@ -16,16 +16,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Ganti dengan versi Node.js yang kamu gunakan
+          node-version: '14' # atau versi Node.js yang kamu gunakan
 
       - name: Install dependencies
         run: npm install
 
       - name: Build Tailwind CSS
-        run: npm run build
+        run: npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Ganti dengan direktori output CSS kamu
+          publish_dir: ./dist
