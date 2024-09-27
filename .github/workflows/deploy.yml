@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Ganti sesuai dengan cabang utama kamu
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # atau versi yang sesuai
+          node-version: '14' # Ganti dengan versi Node.js yang kamu gunakan
 
       - name: Install dependencies
         run: npm install
@@ -27,6 +27,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }} # Menggunakan token yang telah disimpan
           publish_dir: ./dist
-          publish_branch: gh-pages # atau branch yang sesuai
+          publish_branch: gh-pages # Cabang untuk publikasi
