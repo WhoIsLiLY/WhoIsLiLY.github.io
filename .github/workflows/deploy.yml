@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # Ganti dengan versi Node.js yang kamu gunakan
+          node-version: '22' # Ganti dengan versi Node.js yang kamu gunakan
 
       - name: Install dependencies
         run: npm install
