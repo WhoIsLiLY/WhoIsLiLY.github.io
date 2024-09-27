@@ -1,7 +1,11 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html'], // Ganti dengan jalur ke file HTML kamu
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx,html}", // Sesuaikan dengan direktori proyek kamu
+    "./*.html"
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
