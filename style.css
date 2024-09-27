@@ -1,0 +1,31 @@
+.timeline {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .timeline-item h3 {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    background: white;
+    padding: 0 5px;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: #4A5568; /* Custom color */
+    border-radius: 50%;
+  }
+  
