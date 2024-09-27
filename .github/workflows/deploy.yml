@@ -21,8 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Tailwind CSS globally
+        run: npm install -g tailwindcss
+
       - name: Build Tailwind CSS
-        run: npm run build
+        run: npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
