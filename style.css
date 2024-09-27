@@ -28,4 +28,11 @@
     background-color: #4A5568; /* Custom color */
     border-radius: 50%;
   }
+  .navbar .btn {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .btn:hover {
+    background-color: #2c5282; /* Custom color on hover */
+  }
   
