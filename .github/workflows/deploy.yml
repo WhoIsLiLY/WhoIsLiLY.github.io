@@ -16,16 +16,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '22' # Ganti dengan versi Node.js yang kamu gunakan
+          node-version: '20' # Ganti dengan versi Node.js yang kamu gunakan
 
       - name: Install dependencies
         run: npm install
 
-      - name: Install Tailwind CSS globally
-        run: npm install -g tailwindcss
+      # - name: Install Tailwind CSS globally
+      #   run: npm install -g tailwindcss
 
       - name: Build Tailwind CSS
-        run: npx tailwindcss -i ./styles.css -o ./dist/styles.css --minify
+        run: node_modules/.bin/tailwindcss -i ./styles.css -o ./dist/styles.css --minify
+      - name: Fix Permissions
+        run: chmod +x node_modules/.bin/tailwindcss
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
