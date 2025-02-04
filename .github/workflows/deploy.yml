@@ -24,10 +24,11 @@ jobs:
       # - name: Install Tailwind CSS globally
       #   run: npm install -g tailwindcss
 
+      - name: Fix TailwindCSS Permissions
+        run: chmod +x node_modules/.bin/tailwindcss
+        
       - name: Build Tailwind CSS
         run: node_modules/.bin/tailwindcss -i ./styles.css -o ./dist/styles.css --minify
-      - name: Fix Permissions
-        run: chmod +x node_modules/.bin/tailwindcss
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
