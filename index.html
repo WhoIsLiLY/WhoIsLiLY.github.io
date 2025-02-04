@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-base-200">
+<body id="bg-main" class="bg-base-200">
     <nav class="navbar bg-base-100 px-10 shadow-lg">
         <div class="flex-1">
             <a class="text-xl font-bold">WhoIsLiLY</a>
@@ -160,5 +160,18 @@
         });
     </script>
 </body>
-
+<script src="three.r134.min.js"></script>
+<script src="vanta.fog.min.js"></script>
+<script>
+VANTA.FOG({
+  el: "#bg-main",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  midtoneColor: 0x8366fc,
+  zoom: 0.50
+})
+</script>
 </html>
