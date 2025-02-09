@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.timeline {
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item h3 {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  background: white;
+  padding: 0 5px;
+  display: inline-block;
+  z-index: 1;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: #4A5568;
+  /* Custom color */
+  border-radius: 50%;
+}
+
+.navbar .btn {
+  transition: background-color 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #2c5282;
+  /* Custom color on hover */
+}
+
+/* FULL PAGE JS */
+/* Styles for the demo */
+h1 {
+  font-size: 6em;
+  font-size: calc(2em + 2vw);
+  font-family: arial, helvetica;
+  margin: 0;
+}
+
+.intro p {
+  width: 50%;
+  margin: 0.5em auto;
+  font-size: 1.65em;
+}
+
+.section {
+  font-family: arial, helvetica;
+  color: #fff;
+  text-align: center;
+}
+
+/* Backgrounds colors for sections */
+.fp-section:nth-child(1) {
+  background-image: linear-gradient(128deg, #40afff, #3f61ff);
+}
+
+.fp-section:nth-child(2) {
+  background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+}
+
+.fp-section:nth-child(3) {
+  background-image: linear-gradient(128deg, #fc40ff, #543fff);
+}
+
+.fp-section:nth-child(4) {
+  background-image: linear-gradient(128deg, #40fff2, #3fbcff);
+}
+
+/* Overwriting styles for the navigation dots */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: white;
+}
+
+/* Uncomment to overwrite the styles of the tooltips too */
+/*
+        .fp-tooltip{
+            font-size: 1.2em !important;
+            margin-right: 10px;
+        }
+        */
+#fullpage .section{
+  /* Reset all inherited styles */
+  all: unset;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: white;
+}
+
+/* WALLPAPERS */
+#bg-main {
+  position: relative !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-image: url(/img/wallpaper1.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.intro {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhoIsLiLY's Portfolio</title>
+    <link href="dist/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new fullpage("#fullpage", {
+                autoScrolling: true,
+                navigation: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- fullPage.js HTML -->
+    <nav class="fixed navbar bg-base-100 px-10 z-50">
+        <div class="flex-1">
+            <a class="!text-white text-xl font-bold">WhoIsLiLY</a>
+        </div>
+    </nav>
+    <div id="fullpage" class="">
+        <div class="section">
+            <div id="bg-main" class="bg-base-200 overflow-x-hidden scroll-smooth flex items-center justify-center">
+                <div class="overlay"></div>
+                <div class="intro">
+                    <div class="flex items-center justify-center bg-cover bg-center text-white" style="background-image: url('/img/hero-bg.jpg');">
+                        <div class="text-center px-6">
+                            <p class="text-2xl md:text-3xl font-light mt-4 animate-slide-in">
+                                HELLO THERE
+                            </p>
+                            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight animate-fade-in">
+                                ELEVATE YOUR BRAND WITH MODERN SOLUTIONS
+                            </h2>
+                            <div class="mt-10 flex justify-center gap-4">
+                                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full shadow-lg transition duration-300">
+                                    Start a Project
+                                </a>
+                                <a href="#portfolio" class="border border-white px-6 py-3 rounded-full shadow-lg hover:bg-white hover:text-indigo-600 transition duration-300">
+                                    See My Works
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section container mx-auto py-10">
+            <div id="bg-main" class="bg-base-200 overflow-x-hidden scroll-smooth flex items-center justify-center">
+                <div class="overlay"></div>
+                <!-- Wrapper dengan min-h-screen agar mengisi tinggi layar -->
+                <div class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-4">
+
+                    <!-- Bagian Foto Profil -->
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <!-- Ganti src dengan path ke foto profil Anda -->
+                        <img src="/img/profile.jpg" alt="Foto Profil" class="w-48 h-48 object-cover rounded-full border-4 border-white shadow-lg transform transition duration-500 hover:scale-105">
+                    </div>
+
+                    <!-- Bagian Deskripsi -->
+                    <div class="w-full md:w-2/3 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+                            About Me
+                        </h1>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                            Hello! I am <span class="font-semibold">[Your Name]</span>, a web developer and creative designer dedicated to crafting captivating digital experiences. I believe that art and technology can merge to create innovative and user-friendly solutions.
+                        </p>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                            With over 5 years of experience in the IT world, I have had the opportunity to work on various projects, ranging from interactive web applications to responsive and modern interface designs. I am always looking for new challenges to sharpen my skills and continuously learn the latest technologies.
+                        </p>
+                        <a href="#portfolio" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition duration-300">
+                            View Portfolio
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section container mx-auto py-10 min-h-screen">
+            <div class="container h-screen mx-auto py-10">
+                <h2 class="text-4xl font-bold text-center mb-10">My Journey</h2>
+                <div class="relative border-l border-gray-300">
+                    <div class="mb-10 ml-6">
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full left-[-7px] top-0"></div>
+                        <h3 class="text-xl font-semibold">2024</h3>
+                        <p>Completed my internship at XYZ Company.</p>
+                    </div>
+                    <div class="mb-10 ml-6">
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full left-[-7px] top-0"></div>
+                        <h3 class="text-xl font-semibold">2023</h3>
+                        <p>Graduated with a Bachelor's degree in Computer Science.</p>
+                    </div>
+                    <div class="mb-10 ml-6">
+                        <div class="absolute w-3 h-3 bg-blue-500 rounded-full left-[-7px] top-0"></div>
+                        <h3 class="text-xl font-semibold">2022</h3>
+                        <p>Started my web development journey with various online courses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container h-screen mx-auto py-10">
+                <h2 class="text-4xl font-bold text-center mb-10">My Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold">JavaScript</h3>
+                    </div>
+                    <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold">React</h3>
+                    </div>
+                    <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold">NestJS</h3>
+                    </div>
+                    <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold">Tailwind CSS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container h-screen mx-auto py-10">
+                <h2 class="text-4xl font-bold text-center mb-10">Testimonials</h2>
+                <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
+                    <div
+                        class="testimonial bg-base-100 p-6 shadow-lg rounded-md transition-transform transform hover:scale-105">
+                        <p>"Willy is an excellent developer who consistently delivers high-quality work."</p>
+                        <p class="font-semibold">- Jane Doe</p>
+                    </div>
+                    <div
+                        class="testimonial bg-base-100 p-6 shadow-lg rounded-md transition-transform transform hover:scale-105">
+                        <p>"His dedication and creativity make him a valuable team member."</p>
+                        <p class="font-semibold">- John Smith</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="project" class="container mx-auto py-10">
+        <h2 class="text-4xl font-bold text-center mb-10">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div class="card shadow-lg bg-base-100 transition-transform transform hover:scale-105">
+                <figure><img src="/img/image.png" alt="Project 1" class="rounded-t-lg" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Lung Classification Detector</h2>
+                    <p>A website powered by AI to analyze normal or deceased lungs</p>
+                    <div class="card-actions justify-end">
+                        <a href="https://github.com/WhoIsLiLY/Lung_Classification.git"><button
+                                class="btn btn-primary">View More</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="card shadow-lg bg-base-100 transition-transform transform hover:scale-105">
+                <figure><img src="/img/Picture1.png" alt="Project 2" class="rounded-t-lg" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Celikoor Cinema Application</h2>
+                    <p>A powerfull desktop application for cinema management</p>
+                    <div class="card-actions justify-end">
+                        <a href="https://github.com/WhoIsLiLY/Cinema_Tixicket_Application.git"><button
+                                class="btn btn-primary">View More</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="card shadow-lg bg-base-100 transition-transform transform hover:scale-105">
+                <figure><img src="./img/logo.jpg" alt="Project 3" class="rounded-t-lg" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Industrial Games XXXII Rally</h2>
+                    <p>A robust website for IG rally games</p>
+                    <div class="card-actions justify-end">
+                        <a href="https://github.com/WhoIsLiLY/IGXXXII-rally.git">
+                            <button class="btn btn-primary">
+                                View More
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mx-auto py-10">
+        <h2 class="text-4xl font-bold text-center mb-10">My Journey</h2>
+        <div class="relative border-l border-gray-300">
+            <div class="mb-10 ml-6">
+                <div class="absolute w-3 h-3 bg-blue-500 rounded-full left-[-7px] top-0"></div>
+                <h3 class="text-xl font-semibold">2024</h3>
+                <p>Completed my internship at XYZ Company.</p>
+            </div>
+            <div class="mb-10 ml-6">
+                <div class="absolute w-3 h-3 bg-blue-500 rounded-full left-[-7px] top-0"></div>
+                <h3 class="text-xl font-semibold">2023</h3>
+                <p>Graduated with a Bachelor’s degree in Computer Science.</p>
+            </div>
+            <div class="mb-10 ml-6">
+                <div class="absolute w-3 h-3 bg-blue-500 rounded-full left-[-7px] top-0"></div>
+                <h3 class="text-xl font-semibold">2022</h3>
+                <p>Started my web development journey with various online courses.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto py-10">
+        <h2 class="text-4xl font-bold text-center mb-10">My Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                <h3 class="font-semibold">JavaScript</h3>
+            </div>
+            <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                <h3 class="font-semibold">React</h3>
+            </div>
+            <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                <h3 class="font-semibold">NestJS</h3>
+            </div>
+            <div class="skill-card bg-base-100 shadow-md p-4 text-center rounded-md hover:shadow-xl transition-shadow">
+                <h3 class="font-semibold">Tailwind CSS</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto py-10">
+        <h2 class="text-4xl font-bold text-center mb-10">Testimonials</h2>
+        <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
+            <div
+                class="testimonial bg-base-100 p-6 shadow-lg rounded-md transition-transform transform hover:scale-105">
+                <p>"Willy is an excellent developer who consistently delivers high-quality work."</p>
+                <p class="font-semibold">- Jane Doe</p>
+            </div>
+            <div
+                class="testimonial bg-base-100 p-6 shadow-lg rounded-md transition-transform transform hover:scale-105">
+                <p>"His dedication and creativity make him a valuable team member."</p>
+                <p class="font-semibold">- John Smith</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-center p-4 bg-base-100 text-base-content">
+        <div>
+            <p>© 2024 Willy Himawan - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+    <script>
+        // Theme toggle functionality
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('change', () => {
+            document.body.classList.toggle('bg-base-200');
+            document.body.classList.toggle('bg-gray-800');
+            document.body.classList.toggle('text-white');
+        });
+    </script>
+</body>
+<script src="three.r134.min.js"></script>
+<script src="vanta.fog.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Inisialisasi Vanta.js
+        /*let vantaEffect = VANTA.FOG({
+            el: "#bg-main",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            midtoneColor: 0xcbbfff,
+            lowlightColor: 0x5fffa7,
+            baseColor: 0xf0ff4e,
+            blurFactor: 0.90,
+            speed: 3.00,
+            zoom: 3.00
+        })*/
+        let vantaEffect = VANTA.NET({
+            el: "#bg-main",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x7358ff, // Adjust color to match your design
+            backgroundColor: 0x7358ff, // This will be transparent due to backgroundAlpha
+            backgroundAlpha: 0, // Makes background transparent
+            points: 6.00,
+            maxDistance: 19.00,
+            spacing: 19.00,
+            showDots: true
+        })
+        // Tambahkan event listener untuk toggle mode
+        const themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.addEventListener("change", function() {
+            if (themeToggle.checked) {
+                // Mode Gelap
+                document.body.classList.add("dark"); // Bisa disesuaikan dengan CSS Tailwind
+                vantaEffect.setOptions({
+                    //highlightColor: 0x593cb8,
+                    //midtoneColor: 0x2b0b9f,
+                    //lowlightColor: 0xdc00ff,
+                    //baseColor: 0xd45656,
+                });
+            } else {
+                // Mode Terang
+                document.body.classList.remove("dark");
+                vantaEffect.setOptions({
+                    //midtoneColor: 0xcbbfff,
+                    //lowlightColor: 0x5fffa7,
+                    //baseColor: 0xf0ff4e,
+                    color: 0xffffff,
+                    backgroundColor: 0xc7c7c7,
+                });
+            }
+        });
+    });
+</script>
+
+</html>

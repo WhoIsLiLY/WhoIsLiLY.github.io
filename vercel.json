@@ -1,0 +1,6 @@
+{
+    "rewrites": [{ "source": "/", "destination": "/index.php" }],
+    "routes": [{ "src": "/(.*)", "dest": "/index.php" }],
+    "cleanUrls": true
+  }
+  
