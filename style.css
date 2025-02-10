@@ -127,8 +127,7 @@ h1 {
   background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-.intro {
-  position: relative;
+#intro {
   z-index: 2;
   color: white;
   padding: 20px;
